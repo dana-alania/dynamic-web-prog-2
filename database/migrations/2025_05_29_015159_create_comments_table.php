@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->text('comment_content')->comment('Contents of the comment');
             $table->timestamp('comment_date')->comment('Date the comment was made');
-            $table->string('reviwer_name')->comment('name of reviwer');
-            $table->string('reviwer_email')->comment('email of reviewer');
+            $table->string('reviewer_name')->comment('name of reviwer');
+            $table->string('reviewer_email')->comment('email of reviewer');
             $table->boolean('is_hidden')->default(false);
         });
     }

@@ -20,7 +20,6 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamp('registration_date');
             $table->timestamp('last_login_date')->nullable();
-            $table->dropTimestamps();
 
         });
 

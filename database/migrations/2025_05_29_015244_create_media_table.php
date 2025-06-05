@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('file_size')->comment('file size')->nullable();
             $table->string('url')->comment('url');
             $table->timestamp('upload_date')->comment('upload date');
+            $table->string('description')->comment('File description.');
             $table->timestamps();
         });
     }
